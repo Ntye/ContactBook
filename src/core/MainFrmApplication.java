@@ -119,6 +119,8 @@ public class MainFrmApplication extends javax.swing.JFrame {
 
     private void ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewActionPerformed
         // TODO add your handling code here:
+        ContactList list = new ContactList();
+        list.setVisible(true);
     }//GEN-LAST:event_ViewActionPerformed
 
     private void CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateActionPerformed

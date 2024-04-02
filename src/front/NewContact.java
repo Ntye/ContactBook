@@ -28,13 +28,11 @@ public class NewContact extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        Etudiant = new javax.swing.JButton();
-        Agent = new javax.swing.JButton();
-        Enseignant = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
-        jTabbedPane = new javax.swing.JTabbedPane();
+        ContactBox = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -113,38 +111,20 @@ public class NewContact extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
-        Etudiant.setBackground(new java.awt.Color(255, 232, 232));
-        Etudiant.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
-        Etudiant.setText("Etudiant");
-        Etudiant.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EtudiantActionPerformed(evt);
-            }
-        });
-
-        Agent.setBackground(new java.awt.Color(255, 232, 232));
-        Agent.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
-        Agent.setText("Agent");
-        Agent.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AgentActionPerformed(evt);
-            }
-        });
-
-        Enseignant.setBackground(new java.awt.Color(255, 232, 232));
-        Enseignant.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
-        Enseignant.setText("Enseignant");
-        Enseignant.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EnseignantActionPerformed(evt);
-            }
-        });
-
         jLabel16.setFont(new java.awt.Font("Palatino Linotype", 1, 14)); // NOI18N
         jLabel16.setText("New");
 
         jLabel28.setFont(new java.awt.Font("Pristina", 1, 36)); // NOI18N
         jLabel28.setText("CONTACT");
+
+        jComboBox4.setBackground(new java.awt.Color(255, 232, 232));
+        jComboBox4.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Etudiant", "Enseignant", "Agent" }));
+        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -152,21 +132,13 @@ public class NewContact extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Enseignant)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Agent)
-                                .addGap(23, 23, 23))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Etudiant)
-                                .addGap(11, 11, 11))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(jLabel16)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(55, 55, 55)
+                .addComponent(jLabel16)
+                .addContainerGap(76, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,18 +147,14 @@ public class NewContact extends javax.swing.JFrame {
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel28)
-                .addGap(75, 75, 75)
-                .addComponent(Etudiant)
-                .addGap(50, 50, 50)
-                .addComponent(Enseignant)
-                .addGap(50, 50, 50)
-                .addComponent(Agent)
+                .addGap(29, 29, 29)
+                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTabbedPane.setBackground(new java.awt.Color(255, 238, 229));
+        ContactBox.setBackground(new java.awt.Color(255, 238, 229));
 
         jPanel4.setBackground(new java.awt.Color(255, 238, 229));
 
@@ -376,7 +344,7 @@ public class NewContact extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        jTabbedPane.addTab("tab1", jPanel4);
+        ContactBox.addTab("tab1", jPanel4);
 
         jPanel5.setBackground(new java.awt.Color(255, 238, 229));
 
@@ -545,7 +513,7 @@ public class NewContact extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        jTabbedPane.addTab("tab2", jPanel5);
+        ContactBox.addTab("tab2", jPanel5);
 
         jPanel6.setBackground(new java.awt.Color(255, 238, 229));
 
@@ -779,9 +747,9 @@ public class NewContact extends javax.swing.JFrame {
                 .addGap(8, 8, 8))
         );
 
-        jTabbedPane.addTab("tab3", jPanel6);
+        ContactBox.addTab("tab3", jPanel6);
 
-        jPanel3.add(jTabbedPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -43, 470, 550));
+        jPanel3.add(ContactBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -43, 470, 550));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -813,11 +781,6 @@ public class NewContact extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void EnseignantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnseignantActionPerformed
-        // TODO add your handling code here:
-        jTabbedPane.setSelectedIndex(1);
-    }//GEN-LAST:event_EnseignantActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
@@ -863,16 +826,6 @@ public class NewContact extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField21ActionPerformed
 
-    private void EtudiantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EtudiantActionPerformed
-        // TODO add your handling code here:
-        jTabbedPane.setSelectedIndex(0);
-    }//GEN-LAST:event_EtudiantActionPerformed
-
-    private void AgentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgentActionPerformed
-        // TODO add your handling code here:
-        jTabbedPane.setSelectedIndex(2);
-    }//GEN-LAST:event_AgentActionPerformed
-
     private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField22ActionPerformed
@@ -914,6 +867,12 @@ public class NewContact extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField29ActionPerformed
 
+    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+        // TODO add your handling code here:
+        int selectedIndex1 = jComboBox4.getSelectedIndex();
+        ContactBox.setSelectedIndex(selectedIndex1);
+    }//GEN-LAST:event_jComboBox4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -950,18 +909,17 @@ public class NewContact extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Agent;
     private javax.swing.JButton Back;
     private javax.swing.JButton Back1;
     private javax.swing.JButton Back2;
-    private javax.swing.JButton Enseignant;
-    private javax.swing.JButton Etudiant;
+    private javax.swing.JTabbedPane ContactBox;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -1005,7 +963,6 @@ public class NewContact extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JTabbedPane jTabbedPane;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;

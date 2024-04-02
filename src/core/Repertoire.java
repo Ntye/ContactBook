@@ -34,55 +34,23 @@ public class Repertoire {
         this.agents = agents;
     }
     
-    public void ajoutEtudiant(Etudiant etudiant){
-        this.etudiants.add(etudiant);
-    }
+    public void ajoutEtudiant(Etudiant etudiant){this.etudiants.add(etudiant);}
     
-    public void ajoutEnseignant(Enseignant enseignant){
-        this.enseignants.add(enseignant);
-    }
+    public void ajoutEnseignant(Enseignant enseignant){this.enseignants.add(enseignant);}
     
-    public void ajoutAgent(Agent agent){
-        this.agents.add(agent);
-    }
+    public void ajoutAgent(Agent agent){this.agents.add(agent);}
     
-    public void delEtudiant(Etudiant etudiant){
-        this.etudiants.remove(etudiant);
-    }
+    public void delEtudiant(Etudiant etudiant){this.etudiants.remove(etudiant);}
     
-    public void delEnseignant(Enseignant enseignant){
-        this.enseignants.remove(enseignant);
-    }
+    public void delEnseignant(Enseignant enseignant){this.enseignants.remove(enseignant);}
     
-    public void delAgent(Agent agent){
-        this.agents.remove(agent);
-    }
+    public void delAgent(Agent agent){this.agents.remove(agent);}
     
-    public void findEtudiant(Etudiant etudiant){
-        if(contacts.indexOf(etudiant) >= 0){
-            System.out.println("Ce contact existe bien dans la liste de contacts");
-            System.out.println("Son index dans la liste est: "+ this.contacts.indexOf(pers));
-        }else{
-            System.out.println("Désolé, ce contact n'existe pas dans la liste de contacts");
+    public int findContact(ArrayList<Contact> contacts, String code){
+        for(Contact contact: contacts){
+            if(!code.equals(contact.mCode)) return contacts.indexOf(contact);
         }
-    }
-    
-    public void findEnseignant(Enseignant enseignant){
-        if(contacts.indexOf(enseignant) >= 0){
-            System.out.println("Ce contact existe bien dans la liste de contacts");
-            System.out.println("Son index dans la liste est: "+ this.contacts.indexOf(pers));
-        }else{
-            System.out.println("Désolé, ce contact n'existe pas dans la liste de contacts");
-        }
-    }
-    
-    public void findAgent(Agent agent){
-        if(contacts.indexOf(agent) >= 0){
-            System.out.println("Ce contact existe bien dans la liste de contacts");
-            System.out.println("Son index dans la liste est: "+ this.contacts.indexOf(pers));
-        }else{
-            System.out.println("Désolé, ce contact n'existe pas dans la liste de contacts");
-        }
+        return -1;
     }
     
     public void updateContact(Contact pers, int modify, String change) throws ParseException{
@@ -96,91 +64,46 @@ public class Repertoire {
             case 4 -> pers.setAddress(change);
             case 5 -> pers.setEmail(change);
             case 6 -> pers.setTelNum(change);
-//            case 7:
-//                pers.setCycle(change);
-//                break;
-//            case 7:
-//                pers.setNiveau(change);
-//                break;
-//            case 7:
-//                pers.setCycle(change);
-//                break;   
-//            case 7:
-//                pers.setNiveau(change);
-//                break;  
-                
         }
     }
     
     public void updateEtudiant(Etudiant pers, int modify, String change) throws ParseException{
-        if(modify < 7) {
-            updateContact(pers, modify, change);
-            return;
-        }
+        if(modify < 7) updateContact(pers, modify, change);
         else{
             switch (modify) {
-            case 1 -> pers.setCycle(change);
-            case 2 -> pers.setNiveau(change);
+                case 7 -> pers.setCycle(change);
+                case 8 -> pers.setNiveau(change);
             }    
         }
     }
-//        if (modify == 7){
-//            int change;
-//            System.out.println("Veuillez entrer le nouveau niveau");
-//            sc.nextLine();
-//            change = sc.nextInt();
-//            Etudiant e = (Etudiant)pers;
-//            e.setNiveau(change);
-//        }
-//        if (modify == 8){
-//            String change;
-//            Integer choix;
-//            System.out.println("S'agit-il d'un enseignant(0) ou d'un agent(1) ?");
-//            choix = sc.nextInt();
-//            if (choix == 0){
-//                System.out.println("Veuillez entrer le nouveau statut");
-//                sc.nextLine();
-//                change = sc.nextLine();
-//                Enseignant e = (Enseignant)pers;
-//                e.setStatut(change);
-//            }else {
-//                System.out.println("Veuillez entrer le nouveau statut");
-//                sc.nextLine();
-//                change = sc.nextLine();
-//                Agent a = (Agent)pers;
-//                a.setStatut(change);
-//            }
-//        }
-//        if (modify == 9){
-//            Integer change;
-//            System.out.println("Veuillez entrer le nouveau salaire");
-//            Agent a = (Agent)pers;
-//            change = sc.nextInt();
-//            a.setSalaire(change);
-//        }
-//        if (modify == 10){
-//            String change;
-//            System.out.println("Veuillez entrer la nouvelle catégorie");
-//            Agent a = (Agent)pers;
-//            sc.nextLine();
-//            change = sc.nextLine();
-//            a.setCategorie(change);
-//        }
-//        if (modify == 11){
-//            Integer change;
-//            System.out.println("Veuillez entrer le nouvel indice du salaire");
-//            Agent a = (Agent)pers;
-//            change = sc.nextInt();
-//            a.setIndiceSalaire(change);
-//        }
-//        if (modify == 12){
-//            String change;
-//            System.out.println("Veuillez entrer la nouvelle occupation");
-//            Agent a = (Agent)pers;
-//            sc.nextLine();
-//            change = sc.nextLine();
-//            a.setOccupation(change);
-//        }
-//         
-//    }
+    
+    public void updateEnseignant(Enseignant pers, int modify, String change) throws ParseException{
+        if(modify < 7) updateContact(pers, modify, change);
+        else pers.setStatut(change); 
+    }
+    
+    public void updateAgent(Agent pers, int modify, String change) throws ParseException{
+        if(modify < 7) updateContact(pers, modify, change);
+        else{
+            switch (modify) {
+                case 7 -> {
+                    int e = Integer.parseInt(change);
+                    pers.setSalaire(e);
+                }
+                case 8 -> pers.setStatut(change);
+                case 9 -> pers.setCategorie(change);
+                case 10 -> {
+                    int e = Integer.parseInt(change);
+                    pers.setIndice(e);
+                }
+                case 11 -> pers.setOccupation(change);
+            }    
+        }
+    }
+
+    public void deleteEtudiant(ArrayList<Etudiant> etudiants, int index){etudiants.remove(index);}
+    
+    public void deleteEnseignant(ArrayList<Enseignant> enseignants, int index){enseignants.remove(index);}
+    
+    public void deleteAgent(ArrayList<Agent> agents, int index){agents.remove(index);}
 }

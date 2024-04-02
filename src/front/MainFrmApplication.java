@@ -80,7 +80,7 @@ public class MainFrmApplication extends javax.swing.JFrame {
         jLabel2.setText("Contact Book");
 
         Create.setBackground(new java.awt.Color(255, 102, 102));
-        Create.setFont(new java.awt.Font("Rockwell Condensed", 0, 20)); // NOI18N
+        Create.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         Create.setForeground(new java.awt.Color(255, 255, 255));
         Create.setText("CREATE CONTACT");
         Create.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -92,11 +92,16 @@ public class MainFrmApplication extends javax.swing.JFrame {
         });
 
         View.setBackground(new java.awt.Color(255, 102, 102));
-        View.setFont(new java.awt.Font("Rockwell Condensed", 0, 20)); // NOI18N
+        View.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         View.setForeground(new java.awt.Color(255, 255, 255));
         View.setText("VIEW CONTACTS");
         View.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         View.setBorderPainted(false);
+        View.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -132,7 +137,7 @@ public class MainFrmApplication extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 14, Short.MAX_VALUE))
+                        .addGap(0, 9, Short.MAX_VALUE))
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
@@ -163,6 +168,13 @@ public class MainFrmApplication extends javax.swing.JFrame {
         NewContact create = new NewContact();
         create.setVisible(true);
     }//GEN-LAST:event_CreateActionPerformed
+
+    private void ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        ListContact Lists = new ListContact();
+        Lists.setVisible(true);
+    }//GEN-LAST:event_ViewActionPerformed
 
     /**
      * @param args the command line arguments

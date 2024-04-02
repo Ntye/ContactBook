@@ -137,17 +137,173 @@
                     <Component class="javax.swing.JTable" name="TabEtudiant">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="6" rowCount="15">
-                            <Column editable="true" title="Code" type="java.lang.String"/>
-                            <Column editable="true" title="Nom" type="java.lang.String"/>
-                            <Column editable="true" title="DoB" type="java.lang.Object"/>
-                            <Column editable="true" title="Address" type="java.lang.String"/>
-                            <Column editable="true" title="Telephone" type="java.lang.String"/>
-                            <Column editable="true" title="Statut" type="java.lang.String"/>
+                          <Table columnCount="8" rowCount="17">
+                            <Column editable="false" title="Code" type="java.lang.String">
+                              <Data value="E45"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Nom" type="java.lang.String">
+                              <Data value="Nina"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="DoB" type="java.lang.Object">
+                              <Data value="56"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Address" type="java.lang.String">
+                              <Data value="NIna@nina"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Email" type="java.lang.String">
+                              <Data value="yoyo"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Telephone" type="java.lang.String">
+                              <Data value="6775"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Cycle" type="java.lang.String">
+                              <Data value="Ingenieur"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Niveau" type="java.lang.String">
+                              <Data value="1"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                           <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                               <Title/>
                               <Editor/>
@@ -184,6 +340,9 @@
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TabEtudiantMouseClicked"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -203,13 +362,13 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
-                                      <Component id="jTextField30" min="-2" pref="281" max="-2" attributes="0"/>
+                                      <Component id="EtEmail" min="-2" pref="281" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
-                                          <Component id="jTextField51" min="-2" pref="281" max="-2" attributes="0"/>
+                                          <Component id="EtAdd" min="-2" pref="281" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -218,9 +377,9 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField49" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="EtNom" min="-2" pref="281" max="-2" attributes="0"/>
                                               <Group type="102" attributes="0">
-                                                  <Component id="jTextField50" min="-2" pref="135" max="-2" attributes="0"/>
+                                                  <Component id="EtDoB" min="-2" pref="135" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
                                               </Group>
@@ -235,9 +394,9 @@
                                       </Group>
                                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextField52" min="-2" pref="281" max="-2" attributes="0"/>
-                                          <Component id="jComboBox8" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
-                                          <Component id="jTextField48" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                                          <Component id="EtNiveau" min="-2" pref="281" max="-2" attributes="0"/>
+                                          <Component id="EtCycle" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                          <Component id="EtTel" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -251,7 +410,7 @@
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField49" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtNom" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -261,7 +420,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField50" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EtDoB" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -272,7 +431,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField51" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtAdd" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -280,7 +439,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -288,17 +447,17 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField48" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtTel" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtCycle" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel96" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField52" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EtNiveau" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="34" max="32767" attributes="0"/>
                           </Group>
@@ -314,11 +473,11 @@
                         <Property name="text" type="java.lang.String" value="Email:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField30">
+                    <Component class="javax.swing.JTextField" name="EtEmail">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField48">
+                    <Component class="javax.swing.JTextField" name="EtTel">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField48ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EtTelActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel52">
@@ -337,7 +496,7 @@
                         <Property name="text" type="java.lang.String" value="Nom:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField49">
+                    <Component class="javax.swing.JTextField" name="EtNom">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel65">
                       <Properties>
@@ -358,9 +517,9 @@
                         <Property name="text" type="java.lang.String" value="Day-Month-Year"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField50">
+                    <Component class="javax.swing.JTextField" name="EtDoB">
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBox8">
+                    <Component class="javax.swing.JComboBox" name="EtCycle">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="2">
@@ -381,7 +540,7 @@
                         <Property name="text" type="java.lang.String" value="Address:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField51">
+                    <Component class="javax.swing.JTextField" name="EtAdd">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel96">
                       <Properties>
@@ -399,9 +558,9 @@
                         <Property name="text" type="java.lang.String" value="Niveau:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField52">
+                    <Component class="javax.swing.JTextField" name="EtNiveau">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField52ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EtNiveauActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>
@@ -526,7 +685,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jButton36" max="32767" attributes="0"/>
+                                  <Component id="jButton36" pref="70" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -718,14 +877,133 @@
                     <Component class="javax.swing.JTable" name="tabEnseignant">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="7" rowCount="15">
-                            <Column editable="true" title="Code" type="java.lang.String"/>
-                            <Column editable="true" title="Nom" type="java.lang.String"/>
-                            <Column editable="true" title="DoB" type="java.lang.Object"/>
-                            <Column editable="true" title="Address" type="java.lang.String"/>
-                            <Column editable="true" title="Email" type="java.lang.String"/>
-                            <Column editable="true" title="Telephone" type="java.lang.String"/>
-                            <Column editable="true" title="Statut" type="java.lang.Object"/>
+                          <Table columnCount="7" rowCount="16">
+                            <Column editable="false" title="Code" type="java.lang.String">
+                              <Data value="E45"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Nom" type="java.lang.String">
+                              <Data value="Nina"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="DoB" type="java.lang.Object">
+                              <Data value="678"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Address" type="java.lang.String">
+                              <Data value="nina@nina"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Email" type="java.lang.String">
+                              <Data value="yoyo"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Telephone" type="java.lang.String">
+                              <Data value="7668"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
+                            <Column editable="false" title="Statut" type="java.lang.Object">
+                              <Data value="Permanent"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                              <Data value="null"/>
+                            </Column>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -771,6 +1049,9 @@
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabEnseignantMouseClicked"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -795,7 +1076,7 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="222" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="232" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
@@ -827,7 +1108,7 @@
                                   <Component id="jLabel95" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                   <Component id="jTextField7" min="-2" pref="99" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="16" max="32767" attributes="0"/>
                                   <Component id="jButton31" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                               </Group>
@@ -894,7 +1175,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jButton32" max="32767" attributes="0"/>
+                                  <Component id="jButton32" pref="80" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1019,14 +1300,14 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jTextField43" min="-2" pref="281" max="-2" attributes="0"/>
+                                      <Component id="EnNom" min="-2" pref="281" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
-                                              <Component id="jTextField29" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="EnEmail" min="-2" pref="281" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1035,22 +1316,22 @@
                                               </Group>
                                               <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jComboBox7" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
-                                                  <Component id="jTextField46" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                                                  <Component id="EnStatut" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                                  <Component id="EnTel" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                                  <Component id="jTextField44" min="-2" pref="135" max="-2" attributes="0"/>
+                                                  <Component id="EnDoB" min="-2" pref="135" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
-                                                  <Component id="jTextField45" min="-2" pref="281" max="-2" attributes="0"/>
+                                                  <Component id="EnAdd" min="-2" pref="281" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1067,7 +1348,7 @@
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField43" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Component id="EnNom" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -1077,7 +1358,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField44" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EnDoB" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1088,7 +1369,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField45" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnAdd" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1096,7 +1377,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1104,11 +1385,11 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField46" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnTel" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnStatut" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel84" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="62" max="32767" attributes="0"/>
@@ -1125,11 +1406,11 @@
                         <Property name="text" type="java.lang.String" value="Email:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField29">
+                    <Component class="javax.swing.JTextField" name="EnEmail">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField46">
+                    <Component class="javax.swing.JTextField" name="EnTel">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField46ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EnTelActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel51">
@@ -1148,7 +1429,7 @@
                         <Property name="text" type="java.lang.String" value="Nom:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField43">
+                    <Component class="javax.swing.JTextField" name="EnNom">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel61">
                       <Properties>
@@ -1169,9 +1450,9 @@
                         <Property name="text" type="java.lang.String" value="Day-Month-Year"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField44">
+                    <Component class="javax.swing.JTextField" name="EnDoB">
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBox7">
+                    <Component class="javax.swing.JComboBox" name="EnStatut">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="2">
@@ -1192,7 +1473,10 @@
                         <Property name="text" type="java.lang.String" value="Address:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField45">
+                    <Component class="javax.swing.JTextField" name="EnAdd">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EnAddActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel84">
                       <Properties>
@@ -1295,10 +1579,10 @@
                             <Column editable="true" title="Address" type="java.lang.String"/>
                             <Column editable="true" title="Email" type="java.lang.String"/>
                             <Column editable="true" title="Telephone" type="java.lang.String"/>
-                            <Column editable="true" title="Salaire" type="java.lang.String"/>
+                            <Column editable="true" title="Salaire" type="java.lang.Integer"/>
                             <Column editable="true" title="Cycle" type="java.lang.String"/>
                             <Column editable="true" title="Categorie" type="java.lang.String"/>
-                            <Column editable="true" title="Indice" type="java.lang.String"/>
+                            <Column editable="true" title="Indice" type="java.lang.Integer"/>
                             <Column editable="true" title="Occupation" type="java.lang.String"/>
                           </Table>
                         </Property>
@@ -1365,6 +1649,9 @@
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabAgentMouseClicked"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1389,7 +1676,7 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="224" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="237" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
@@ -1421,7 +1708,7 @@
                                   <Component id="jLabel98" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                   <Component id="jTextField9" min="-2" pref="99" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="21" max="32767" attributes="0"/>
                                   <Component id="jButton39" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                               </Group>
@@ -1488,7 +1775,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jButton40" max="32767" attributes="0"/>
+                                  <Component id="jButton40" pref="85" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1614,7 +1901,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
-                                          <Component id="jTextField56" min="-2" pref="281" max="-2" attributes="0"/>
+                                          <Component id="AgAdd" min="-2" pref="281" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1623,9 +1910,9 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField54" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="AgNom" min="-2" pref="281" max="-2" attributes="0"/>
                                               <Group type="102" attributes="0">
-                                                  <Component id="jTextField55" min="-2" pref="135" max="-2" attributes="0"/>
+                                                  <Component id="AgDoB" min="-2" pref="135" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
                                               </Group>
@@ -1642,28 +1929,28 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField60" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
-                                              <Component id="jTextField59" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
-                                              <Component id="jTextField58" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
-                                              <Component id="jComboBox6" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                              <Component id="AgOccupation" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="AgIndice" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="AgCategorie" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="AgStatut" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="jLabel78" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextField57" min="-2" pref="281" max="-2" attributes="0"/>
+                                              <Component id="AgSalaire" min="-2" pref="281" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
-                                                  <Component id="jTextField41" min="-2" pref="281" max="-2" attributes="0"/>
+                                                  <Component id="AgEmail" min="-2" pref="281" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="72" pref="72" max="-2" attributes="0"/>
-                                                  <Component id="jTextField53" min="-2" pref="281" max="-2" attributes="0"/>
+                                                  <Component id="AgTel" min="-2" pref="281" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1679,7 +1966,7 @@
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField54" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgNom" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -1689,7 +1976,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField55" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="AgDoB" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1700,7 +1987,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField56" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgAdd" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1708,7 +1995,7 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField41" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1716,31 +2003,31 @@
                                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                       <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField53" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgTel" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel78" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField57" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgSalaire" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel79" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgStatut" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel80" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField58" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgCategorie" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField59" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgIndice" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField60" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AgOccupation" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel82" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="43" max="32767" attributes="0"/>
@@ -1757,7 +2044,7 @@
                         <Property name="text" type="java.lang.String" value="Date de Naissance:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField54">
+                    <Component class="javax.swing.JTextField" name="AgNom">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel74">
                       <Properties>
@@ -1775,16 +2062,16 @@
                         <Property name="text" type="java.lang.String" value="Telephone:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField53">
+                    <Component class="javax.swing.JTextField" name="AgTel">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField53ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgTelActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField41">
+                    <Component class="javax.swing.JTextField" name="AgEmail">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField57">
+                    <Component class="javax.swing.JTextField" name="AgSalaire">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField57ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgSalaireActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel54">
@@ -1803,7 +2090,7 @@
                         <Property name="text" type="java.lang.String" value="Salaire:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField56">
+                    <Component class="javax.swing.JTextField" name="AgAdd">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel77">
                       <Properties>
@@ -1813,7 +2100,7 @@
                         <Property name="text" type="java.lang.String" value="Address:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField55">
+                    <Component class="javax.swing.JTextField" name="AgDoB">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel76">
                       <Properties>
@@ -1834,7 +2121,7 @@
                         <Property name="text" type="java.lang.String" value="Statut:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBox6">
+                    <Component class="javax.swing.JComboBox" name="AgStatut">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="3">
@@ -1856,9 +2143,9 @@
                         <Property name="text" type="java.lang.String" value="Categorie:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField58">
+                    <Component class="javax.swing.JTextField" name="AgCategorie">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField58ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgCategorieActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel81">
@@ -1877,14 +2164,14 @@
                         <Property name="text" type="java.lang.String" value="Occupation:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField60">
+                    <Component class="javax.swing.JTextField" name="AgOccupation">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField60ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgOccupationActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField59">
+                    <Component class="javax.swing.JTextField" name="AgIndice">
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField59ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgIndiceActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>

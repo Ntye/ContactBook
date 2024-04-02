@@ -4,6 +4,8 @@
  */
 package front;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Petite Voisine
@@ -33,20 +35,20 @@ public class ListContact extends javax.swing.JFrame {
         TabEtudiant = new javax.swing.JTable();
         jPanel18 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
+        EtEmail = new javax.swing.JTextField();
+        EtTel = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
-        jTextField49 = new javax.swing.JTextField();
+        EtNom = new javax.swing.JTextField();
         jLabel65 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
-        jTextField50 = new javax.swing.JTextField();
-        jComboBox8 = new javax.swing.JComboBox<>();
+        EtDoB = new javax.swing.JTextField();
+        EtCycle = new javax.swing.JComboBox<>();
         jLabel69 = new javax.swing.JLabel();
-        jTextField51 = new javax.swing.JTextField();
+        EtAdd = new javax.swing.JTextField();
         jLabel96 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
-        jTextField52 = new javax.swing.JTextField();
+        EtNiveau = new javax.swing.JTextField();
         EtudiantPane = new javax.swing.JTabbedPane();
         jPanel12 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
@@ -78,17 +80,17 @@ public class ListContact extends javax.swing.JFrame {
         jButton34 = new javax.swing.JButton();
         jPanel17 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField46 = new javax.swing.JTextField();
+        EnEmail = new javax.swing.JTextField();
+        EnTel = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
-        jTextField43 = new javax.swing.JTextField();
+        EnNom = new javax.swing.JTextField();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
-        jTextField44 = new javax.swing.JTextField();
-        jComboBox7 = new javax.swing.JComboBox<>();
+        EnDoB = new javax.swing.JTextField();
+        EnStatut = new javax.swing.JComboBox<>();
         jLabel63 = new javax.swing.JLabel();
-        jTextField45 = new javax.swing.JTextField();
+        EnAdd = new javax.swing.JTextField();
         jLabel84 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -108,26 +110,26 @@ public class ListContact extends javax.swing.JFrame {
         jButton42 = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
         jLabel75 = new javax.swing.JLabel();
-        jTextField54 = new javax.swing.JTextField();
+        AgNom = new javax.swing.JTextField();
         jLabel74 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
-        jTextField53 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField57 = new javax.swing.JTextField();
+        AgTel = new javax.swing.JTextField();
+        AgEmail = new javax.swing.JTextField();
+        AgSalaire = new javax.swing.JTextField();
         jLabel54 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
-        jTextField56 = new javax.swing.JTextField();
+        AgAdd = new javax.swing.JTextField();
         jLabel77 = new javax.swing.JLabel();
-        jTextField55 = new javax.swing.JTextField();
+        AgDoB = new javax.swing.JTextField();
         jLabel76 = new javax.swing.JLabel();
         jLabel79 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
+        AgStatut = new javax.swing.JComboBox<>();
         jLabel80 = new javax.swing.JLabel();
-        jTextField58 = new javax.swing.JTextField();
+        AgCategorie = new javax.swing.JTextField();
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
-        jTextField60 = new javax.swing.JTextField();
-        jTextField59 = new javax.swing.JTextField();
+        AgOccupation = new javax.swing.JTextField();
+        AgIndice = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         ContactBox1 = new javax.swing.JComboBox<>();
         jLabel28 = new javax.swing.JLabel();
@@ -143,32 +145,46 @@ public class ListContact extends javax.swing.JFrame {
 
         TabEtudiant.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {"E45", "Nina", "56", "NIna@nina", "yoyo", "6775", "Ingenieur", "1"},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Code", "Nom", "DoB", "Address", "Telephone", "Statut"
+                "Code", "Nom", "DoB", "Address", "Email", "Telephone", "Cycle", "Niveau"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TabEtudiant.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TabEtudiantMouseClicked(evt);
             }
         });
         jScrollPane3.setViewportView(TabEtudiant);
@@ -178,9 +194,9 @@ public class ListContact extends javax.swing.JFrame {
         jLabel31.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel31.setText("Email:");
 
-        jTextField48.addActionListener(new java.awt.event.ActionListener() {
+        EtTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField48ActionPerformed(evt);
+                EtTelActionPerformed(evt);
             }
         });
 
@@ -197,7 +213,7 @@ public class ListContact extends javax.swing.JFrame {
         jLabel66.setForeground(new java.awt.Color(130, 130, 130));
         jLabel66.setText("Day-Month-Year");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Licence", "Ingenieur" }));
+        EtCycle.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Licence", "Ingenieur" }));
 
         jLabel69.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel69.setText("Address:");
@@ -208,9 +224,9 @@ public class ListContact extends javax.swing.JFrame {
         jLabel53.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel53.setText("Niveau:");
 
-        jTextField52.addActionListener(new java.awt.event.ActionListener() {
+        EtNiveau.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField52ActionPerformed(evt);
+                EtNiveauActionPerformed(evt);
             }
         });
 
@@ -224,21 +240,21 @@ public class ListContact extends javax.swing.JFrame {
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addComponent(jLabel31)
                         .addGap(91, 91, 91)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(EtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel18Layout.createSequentialGroup()
                             .addComponent(jLabel69)
                             .addGap(81, 81, 81)
-                            .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(EtAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel18Layout.createSequentialGroup()
                             .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel65)
                                 .addComponent(jLabel64))
                             .addGap(28, 28, 28)
                             .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(EtNom, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel18Layout.createSequentialGroup()
-                                    .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(EtDoB, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel66)))))
                     .addGroup(jPanel18Layout.createSequentialGroup()
@@ -248,9 +264,9 @@ public class ListContact extends javax.swing.JFrame {
                             .addComponent(jLabel53))
                         .addGap(72, 72, 72)
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(EtNiveau, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EtCycle, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EtTel, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
@@ -259,7 +275,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel64)
-                    .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EtNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(11, 11, 11)
@@ -267,34 +283,34 @@ public class ListContact extends javax.swing.JFrame {
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(7, 7, 7)
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EtDoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel66))))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel69))
-                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EtAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel31))
-                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel52))
-                    .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EtTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EtCycle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel96))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel53)
-                    .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EtNiveau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
@@ -372,7 +388,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
-                .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                 .addGap(17, 17, 17))
         );
         jPanel13Layout.setVerticalGroup(
@@ -471,6 +487,7 @@ public class ListContact extends javax.swing.JFrame {
 
         tabEnseignant.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {"E45", "Nina", "678", "nina@nina", "yoyo", "7668", "Permanent"},
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -494,9 +511,21 @@ public class ListContact extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tabEnseignant.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tabEnseignantMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(tabEnseignant);
@@ -507,7 +536,7 @@ public class ListContact extends javax.swing.JFrame {
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 222, Short.MAX_VALUE)
+            .addGap(0, 232, Short.MAX_VALUE)
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -538,7 +567,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addComponent(jLabel95)
                 .addGap(25, 25, 25)
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(jButton31)
                 .addGap(16, 16, 16))
         );
@@ -575,7 +604,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
-                .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
                 .addGap(17, 17, 17))
         );
         jPanel10Layout.setVerticalGroup(
@@ -627,9 +656,9 @@ public class ListContact extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel30.setText("Email:");
 
-        jTextField46.addActionListener(new java.awt.event.ActionListener() {
+        EnTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField46ActionPerformed(evt);
+                EnTelActionPerformed(evt);
             }
         });
 
@@ -646,10 +675,16 @@ public class ListContact extends javax.swing.JFrame {
         jLabel62.setForeground(new java.awt.Color(130, 130, 130));
         jLabel62.setText("Day-Month-Year");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vacataire", "Permanent" }));
+        EnStatut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vacataire", "Permanent" }));
 
         jLabel63.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel63.setText("Address:");
+
+        EnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EnAddActionPerformed(evt);
+            }
+        });
 
         jLabel84.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel84.setText("Statut:");
@@ -664,32 +699,32 @@ public class ListContact extends javax.swing.JFrame {
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addComponent(jLabel60)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(EnNom, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel17Layout.createSequentialGroup()
                                 .addComponent(jLabel30)
                                 .addGap(91, 91, 91)
-                                .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(EnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel17Layout.createSequentialGroup()
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel51)
                                     .addComponent(jLabel84))
                                 .addGap(72, 72, 72)
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(EnStatut, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(EnTel, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel17Layout.createSequentialGroup()
                                     .addComponent(jLabel61)
                                     .addGap(28, 28, 28)
-                                    .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(EnDoB, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel62))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel17Layout.createSequentialGroup()
                                     .addComponent(jLabel63)
                                     .addGap(81, 81, 81)
-                                    .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(EnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -699,7 +734,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel60)
-                    .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EnNom, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(11, 11, 11)
@@ -707,29 +742,29 @@ public class ListContact extends javax.swing.JFrame {
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(7, 7, 7)
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EnDoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel62))))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel63))
-                    .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel30))
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EnEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel51))
-                    .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EnTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EnStatut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel84))
                 .addContainerGap(62, Short.MAX_VALUE))
         );
@@ -805,11 +840,16 @@ public class ListContact extends javax.swing.JFrame {
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+        });
+        tabAgent.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tabAgentMouseClicked(evt);
             }
         });
         jScrollPane2.setViewportView(tabAgent);
@@ -820,7 +860,7 @@ public class ListContact extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 224, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -851,7 +891,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addComponent(jLabel98)
                 .addGap(25, 25, 25)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addComponent(jButton39)
                 .addGap(16, 16, 16))
         );
@@ -888,7 +928,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
-                .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
                 .addGap(17, 17, 17))
         );
         jPanel19Layout.setVerticalGroup(
@@ -946,15 +986,15 @@ public class ListContact extends javax.swing.JFrame {
         jLabel56.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel56.setText("Telephone:");
 
-        jTextField53.addActionListener(new java.awt.event.ActionListener() {
+        AgTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField53ActionPerformed(evt);
+                AgTelActionPerformed(evt);
             }
         });
 
-        jTextField57.addActionListener(new java.awt.event.ActionListener() {
+        AgSalaire.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField57ActionPerformed(evt);
+                AgSalaireActionPerformed(evt);
             }
         });
 
@@ -974,14 +1014,14 @@ public class ListContact extends javax.swing.JFrame {
         jLabel79.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel79.setText("Statut:");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Temporaire", "Stagaire", "Permanent" }));
+        AgStatut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Temporaire", "Stagaire", "Permanent" }));
 
         jLabel80.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel80.setText("Categorie:");
 
-        jTextField58.addActionListener(new java.awt.event.ActionListener() {
+        AgCategorie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField58ActionPerformed(evt);
+                AgCategorieActionPerformed(evt);
             }
         });
 
@@ -991,15 +1031,15 @@ public class ListContact extends javax.swing.JFrame {
         jLabel82.setFont(new java.awt.Font("Pristina", 1, 15)); // NOI18N
         jLabel82.setText("Occupation:");
 
-        jTextField60.addActionListener(new java.awt.event.ActionListener() {
+        AgOccupation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField60ActionPerformed(evt);
+                AgOccupationActionPerformed(evt);
             }
         });
 
-        jTextField59.addActionListener(new java.awt.event.ActionListener() {
+        AgIndice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField59ActionPerformed(evt);
+                AgIndiceActionPerformed(evt);
             }
         });
 
@@ -1014,16 +1054,16 @@ public class ListContact extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel20Layout.createSequentialGroup()
                             .addComponent(jLabel77)
                             .addGap(81, 81, 81)
-                            .addComponent(jTextField56, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(AgAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel20Layout.createSequentialGroup()
                             .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel75)
                                 .addComponent(jLabel74))
                             .addGap(28, 28, 28)
                             .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(AgNom, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel20Layout.createSequentialGroup()
-                                    .addComponent(jTextField55, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(AgDoB, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel76)))))
                     .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1035,24 +1075,24 @@ public class ListContact extends javax.swing.JFrame {
                                 .addComponent(jLabel82))
                             .addGap(43, 43, 43)
                             .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField60, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField59, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField58, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(AgOccupation, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(AgIndice, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(AgCategorie, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(AgStatut, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel20Layout.createSequentialGroup()
                                 .addComponent(jLabel78)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField57, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(AgSalaire, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel20Layout.createSequentialGroup()
                                     .addComponent(jLabel54)
                                     .addGap(91, 91, 91)
-                                    .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(AgEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel20Layout.createSequentialGroup()
                                     .addComponent(jLabel56)
                                     .addGap(72, 72, 72)
-                                    .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(AgTel, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
@@ -1061,7 +1101,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel74)
-                    .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(11, 11, 11)
@@ -1069,45 +1109,45 @@ public class ListContact extends javax.swing.JFrame {
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(7, 7, 7)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AgDoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel76))))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel77))
-                    .addComponent(jTextField56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel54))
-                    .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(jLabel56))
-                    .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel78)
-                    .addComponent(jTextField57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgSalaire, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel79)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgStatut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel80)
-                    .addComponent(jTextField58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AgCategorie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AgIndice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel81))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AgOccupation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel82))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
@@ -1234,13 +1274,13 @@ public class ListContact extends javax.swing.JFrame {
         EnseignantPane.setSelectedIndex(2);
     }//GEN-LAST:event_jButton34ActionPerformed
 
-    private void jTextField46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField46ActionPerformed
+    private void EnTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnTelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField46ActionPerformed
+    }//GEN-LAST:event_EnTelActionPerformed
 
-    private void jTextField48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField48ActionPerformed
+    private void EtTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EtTelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField48ActionPerformed
+    }//GEN-LAST:event_EtTelActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
@@ -1296,29 +1336,80 @@ public class ListContact extends javax.swing.JFrame {
         AgentPane.setSelectedIndex(2);
     }//GEN-LAST:event_jButton42ActionPerformed
 
-    private void jTextField53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField53ActionPerformed
+    private void AgTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgTelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField53ActionPerformed
+    }//GEN-LAST:event_AgTelActionPerformed
 
-    private void jTextField57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField57ActionPerformed
+    private void AgSalaireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgSalaireActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField57ActionPerformed
+    }//GEN-LAST:event_AgSalaireActionPerformed
 
-    private void jTextField58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField58ActionPerformed
+    private void AgCategorieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgCategorieActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField58ActionPerformed
+    }//GEN-LAST:event_AgCategorieActionPerformed
 
-    private void jTextField60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField60ActionPerformed
+    private void AgOccupationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgOccupationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField60ActionPerformed
+    }//GEN-LAST:event_AgOccupationActionPerformed
 
-    private void jTextField59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField59ActionPerformed
+    private void AgIndiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgIndiceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField59ActionPerformed
+    }//GEN-LAST:event_AgIndiceActionPerformed
 
-    private void jTextField52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField52ActionPerformed
+    private void EtNiveauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EtNiveauActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField52ActionPerformed
+    }//GEN-LAST:event_EtNiveauActionPerformed
+
+    private void EnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnAddActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EnAddActionPerformed
+
+    private void TabEtudiantMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabEtudiantMouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel model =(DefaultTableModel)TabEtudiant.getModel();
+        
+        int index = TabEtudiant.getSelectedRow();
+        
+        EtNom.setText(model.getValueAt(index, 1).toString());
+        EtDoB.setText(model.getValueAt(index, 2).toString());
+        EtAdd.setText(model.getValueAt(index, 3).toString());
+        EtEmail.setText(model.getValueAt(index, 4).toString());
+        EtTel.setText(model.getValueAt(index, 5).toString());
+        EtCycle.setSelectedItem(model.getValueAt(index, 6).toString());
+        EtNiveau.setText(model.getValueAt(index, 7).toString());
+    }//GEN-LAST:event_TabEtudiantMouseClicked
+
+    private void tabEnseignantMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabEnseignantMouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel model =(DefaultTableModel)tabEnseignant.getModel();
+        
+        int index = tabEnseignant.getSelectedRow();
+        
+        EnNom.setText(model.getValueAt(index, 1).toString());
+        EnDoB.setText(model.getValueAt(index, 2).toString());
+        EnAdd.setText(model.getValueAt(index, 3).toString());
+        EnEmail.setText(model.getValueAt(index, 4).toString());
+        EnTel.setText(model.getValueAt(index, 5).toString());
+        EnStatut.setSelectedItem(model.getValueAt(index, 6).toString());
+    }//GEN-LAST:event_tabEnseignantMouseClicked
+
+    private void tabAgentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabAgentMouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel model =(DefaultTableModel)tabAgent.getModel();
+        
+        int index = tabAgent.getSelectedRow();
+        
+        AgNom.setText(model.getValueAt(index, 1).toString());
+        AgDoB.setText(model.getValueAt(index, 2).toString());
+        AgAdd.setText(model.getValueAt(index, 3).toString());
+        AgEmail.setText(model.getValueAt(index, 4).toString());
+        AgTel.setText(model.getValueAt(index, 5).toString());
+        AgSalaire.setText(model.getValueAt(index, 6).toString());
+        AgStatut.setSelectedItem(model.getValueAt(index, 7).toString());
+        AgCategorie.setText(model.getValueAt(index, 8).toString());
+        AgIndice.setText(model.getValueAt(index, 9).toString());
+        AgOccupation.setText(model.getValueAt(index, 10).toString());
+    }//GEN-LAST:event_tabAgentMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1356,10 +1447,33 @@ public class ListContact extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField AgAdd;
+    private javax.swing.JTextField AgCategorie;
+    private javax.swing.JTextField AgDoB;
+    private javax.swing.JTextField AgEmail;
+    private javax.swing.JTextField AgIndice;
+    private javax.swing.JTextField AgNom;
+    private javax.swing.JTextField AgOccupation;
+    private javax.swing.JTextField AgSalaire;
+    private javax.swing.JComboBox<String> AgStatut;
+    private javax.swing.JTextField AgTel;
     private javax.swing.JTabbedPane AgentPane;
     private javax.swing.JComboBox<String> ContactBox1;
     private javax.swing.JTabbedPane ContactPane;
+    private javax.swing.JTextField EnAdd;
+    private javax.swing.JTextField EnDoB;
+    private javax.swing.JTextField EnEmail;
+    private javax.swing.JTextField EnNom;
+    private javax.swing.JComboBox<String> EnStatut;
+    private javax.swing.JTextField EnTel;
     private javax.swing.JTabbedPane EnseignantPane;
+    private javax.swing.JTextField EtAdd;
+    private javax.swing.JComboBox<String> EtCycle;
+    private javax.swing.JTextField EtDoB;
+    private javax.swing.JTextField EtEmail;
+    private javax.swing.JTextField EtNiveau;
+    private javax.swing.JTextField EtNom;
+    private javax.swing.JTextField EtTel;
     private javax.swing.JTabbedPane EtudiantPane;
     private javax.swing.JTable TabEtudiant;
     private javax.swing.JButton jButton1;
@@ -1384,9 +1498,6 @@ public class ListContact extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
@@ -1438,26 +1549,6 @@ public class ListContact extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField55;
-    private javax.swing.JTextField jTextField56;
-    private javax.swing.JTextField jTextField57;
-    private javax.swing.JTextField jTextField58;
-    private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField60;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;

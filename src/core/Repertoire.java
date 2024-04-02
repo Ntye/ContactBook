@@ -46,9 +46,23 @@ public class Repertoire {
     
     public void delAgent(Agent agent){this.agents.remove(agent);}
     
-    public int findContact(ArrayList<Contact> contacts, String code){
-        for(Contact contact: contacts){
-            if(!code.equals(contact.mCode)) return contacts.indexOf(contact);
+    public int findEtudiant(ArrayList<Etudiant> etudiants, String code){
+        for(Etudiant contact: etudiants){
+            if(!code.equals(contact.mCode)) return etudiants.indexOf(contact);
+        }
+        return -1;
+    }
+    
+    public int findEnseignant(ArrayList<Enseignant> enseignants, String code){
+        for(Enseignant contact: enseignants){
+            if(!code.equals(contact.mCode)) return enseignants.indexOf(contact);
+        }
+        return -1;
+    }
+    
+    public int findAgent(ArrayList<Agent> agents, String code){
+        for(Contact contact: agents){
+            if(!code.equals(contact.mCode)) return agents.indexOf(contact);
         }
         return -1;
     }

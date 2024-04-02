@@ -19,6 +19,7 @@ import java.util.Date;
 public class Repertoire {
     private Connection connection;
     private ArrayList<Contact> contacts;
+    
 
     public Repertoire(ArrayList<Contact> contacts) {
         this.contacts = contacts;

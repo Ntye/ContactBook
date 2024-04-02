@@ -164,7 +164,7 @@ public class MainFrmApplication extends javax.swing.JFrame {
     private void ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        ListContact Lists = new ListContact();
+        ContactList Lists = new ContactList();
         Lists.setVisible(true);
     }//GEN-LAST:event_ViewActionPerformed
 

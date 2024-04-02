@@ -4,13 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/Repertoire.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/projet_poo/MainApplication.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/Etudiant.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/Contact.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/CreateContact.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/projet_poo/ContactBookGUI.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/Agent.java</file>
-            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/core/MainFrmApplication.java</file>
+            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/front/NewContact.java</file>
+            <file>file:/C:/Users/Petite%20Voisine/Documents/NetBeansProjects/Projet_POO/src/front/ListContact.java</file>
         </group>
     </open-files>
 </project-private>

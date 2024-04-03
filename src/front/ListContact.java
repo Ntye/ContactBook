@@ -102,7 +102,7 @@ public class ListContact extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jLabel98 = new javax.swing.JLabel();
         jPanel19 = new javax.swing.JPanel();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        AgChoice = new javax.swing.JComboBox<>();
         jButton40 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
@@ -567,7 +567,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addComponent(jLabel95)
                 .addGap(25, 25, 25)
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton31)
                 .addGap(16, 16, 16))
         );
@@ -778,7 +778,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(EnseignantPane)
+                    .addComponent(EnseignantPane, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -842,9 +842,16 @@ public class ListContact extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         tabAgent.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -910,7 +917,7 @@ public class ListContact extends javax.swing.JFrame {
 
         jPanel19.setBackground(new java.awt.Color(249, 241, 241));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nom", "Date", "Address", "Email", "Telephone", "Salaire", "Cycle", "Categorie", "Indice", "Occupation" }));
+        AgChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nom", "Date", "Address", "Email", "Telephone", "Salaire", "Cycle", "Categorie", "Indice", "Occupation" }));
 
         jButton40.setText("Enregistrer");
         jButton40.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -926,7 +933,7 @@ public class ListContact extends javax.swing.JFrame {
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AgChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
                 .addGap(17, 17, 17))
@@ -936,7 +943,7 @@ public class ListContact extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AgChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton40))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
@@ -1162,7 +1169,7 @@ public class ListContact extends javax.swing.JFrame {
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AgentPane)
+                    .addComponent(AgentPane, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1297,6 +1304,14 @@ public class ListContact extends javax.swing.JFrame {
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
+        EtNom.setEnabled(false);
+        EtDoB.setEnabled(false);
+        EtAdd.setEnabled(false);
+        EtEmail.setEnabled(false);
+        EtTel.setEnabled(false);
+        EtCycle.setEnabled(false);
+        EtNiveau.setEnabled(false);
+        
         EtudiantPane.setSelectedIndex(0);
     }//GEN-LAST:event_jButton16ActionPerformed
 
@@ -1306,6 +1321,14 @@ public class ListContact extends javax.swing.JFrame {
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
+        EtNom.setEnabled(false);
+        EtDoB.setEnabled(false);
+        EtAdd.setEnabled(false);
+        EtEmail.setEnabled(false);
+        EtTel.setEnabled(false);
+        EtCycle.setEnabled(false);
+        EtNiveau.setEnabled(false);
+        
         EtudiantPane.setSelectedIndex(2);
     }//GEN-LAST:event_jButton38ActionPerformed
 
@@ -1315,6 +1338,20 @@ public class ListContact extends javax.swing.JFrame {
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         // TODO add your handling code here:
+        int choice = AgChoice.getSelectedIndex();
+        
+        DefaultTableModel model =(DefaultTableModel)TabEtudiant.getModel();
+        
+//        int index = TabEtudiant.getSelectedRow();
+//        if (index >= 0){
+//            switch (choice) {
+//                case 0 ->{
+//                    
+//                }
+//            }
+//        }
+        
+//        model.setValueAt(AgNom.getText(), index, 1);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -1333,6 +1370,16 @@ public class ListContact extends javax.swing.JFrame {
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         // TODO add your handling code here:
+        AgNom.setEnabled(false);
+        AgDoB.setEnabled(false);
+        AgAdd.setEnabled(false);
+        AgEmail.setEnabled(false);
+        AgTel.setEnabled(false);
+        AgSalaire.setEnabled(false);
+        AgStatut.setEnabled(false);
+        AgCategorie.setEnabled(false);
+        AgIndice.setEnabled(false);
+        AgOccupation.setEnabled(false);
         AgentPane.setSelectedIndex(2);
     }//GEN-LAST:event_jButton42ActionPerformed
 
@@ -1449,6 +1496,7 @@ public class ListContact extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField AgAdd;
     private javax.swing.JTextField AgCategorie;
+    private javax.swing.JComboBox<String> AgChoice;
     private javax.swing.JTextField AgDoB;
     private javax.swing.JTextField AgEmail;
     private javax.swing.JTextField AgIndice;
@@ -1497,7 +1545,6 @@ public class ListContact extends javax.swing.JFrame {
     private javax.swing.JButton jButton42;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
